@@ -11,13 +11,6 @@ from geopy.geocoders import Nominatim
 import random
 import math
 
-# Attempt to import geopy, and install it if not found
-try:
-    from geopy.geocoders import Nominatim
-except ModuleNotFoundError:
-    import os
-    os.system('pip install geopy')
-    from geopy.geocoders import Nominatim
 
 # Title of the app
 st.title("🚖 Taxi Fare Prediction 🎉")
